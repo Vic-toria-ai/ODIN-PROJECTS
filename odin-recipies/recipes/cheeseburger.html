@@ -1,40 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classic Cheeseburger Recipe</title>
-</head>
-<body>
-    <a href="../index.html">Back to Home Page</a>
-    <h1>Classic Cheeseburger Recipe</h1>
-    <img src="../recipes/images/burger.png" alt="Delicious Cheeseburger" width="500">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <h2>DESCRIPTION</h2>
-    <p>The classic cheeseburger is a timeless American favorite, featuring a juicy beef patty topped with melted cheese, fresh lettuce, ripe tomatoes, onions, pickles, and a soft bun. It's a perfect combination of flavors and textures that makes it a go-to choice for burger lovers.</p>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: #fcf4d4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-    <h3>INGREDIENTS</h3>
-    <ul>
-        <li>1 lb (450 g) ground beef.</li>
-        <li>4 slices of cheddar cheese.</li> 
-        <li>4 hamburger buns.</li>
-        <li>1 cup shredded lettuce.</li>  
-        <li>1 large tomato, sliced.</li>
-        <li>1 small onion, sliced.</li>
-        <li>Pickles (optional).</li>
-        <li>Salt and pepper to taste.</li>
-        <li>Condiments of your choice (ketchup, mustard, mayonnaise).</li> 
-    </ul>
+      .container {
+        background-color: #f7567c;
+        color: #fcfcfc;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 15px;
+        width: 550px;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
 
-    <h3>INSTRUCTIONS</h3>
-    <ol>
-        <li>Preheat your grill or skillet to medium-high heat.</li>
-        <li>Divide the ground beef into 4 equal portions and shape them into patties. Season both sides with salt and pepper.</li>
-        <li>Cook the patties on the grill or skillet for about 3-4 minutes per side, or until they reach your desired level of doneness.</li>
-        <li>During the last minute of cooking, place a slice of cheddar cheese on each patty and cover to melt the cheese.</li>
-        <li>Toast the hamburger buns on the grill or in a toaster until lightly browned.</li>
-        <li>Assemble the cheeseburgers by placing a cooked patty on the bottom half of each bun, then adding lettuce, tomato slices, onion slices, pickles (if using), and your preferred condiments. Top with the other half of the bun.</li>
-        <li>Serve immediately and enjoy your classic cheeseburger!</li>
-    </ol>
-</body>
+      img {
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 500px;
+        height: 300px;
+      }
+
+      h2,
+      h3 {
+        margin-bottom: 6px;
+      }
+      .description,
+      .ingredients,
+      .steps {
+        padding: 10px;
+        margin: 10px;
+      }
+      ul {
+        padding: 10px;
+        list-style: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="../recipes/images/burger.png"
+        alt="Delicious Cheeseburger"
+        width="500"
+      />
+      <a href="../index.html">Back to Home Page</a>
+      <h1 class="title">Classic Cheeseburger Recipe</h1>
+
+      <div class="description">
+        <h2>DESCRIPTION</h2>
+        <p>
+          The classic cheeseburger is a timeless American favorite, featuring a
+          juicy beef patty topped with melted cheese, fresh lettuce, ripe
+          tomatoes, onions, pickles, and a soft bun. It's a perfect combination
+          of flavors and textures that makes it a go-to choice for burger
+          lovers.
+        </p>
+      </div>
+
+      <div class="ingredients">
+        <h3>INGREDIENTS</h3>
+        <ul>
+          <li>1 lb (450 g) ground beef.</li>
+          <li>4 slices of cheddar cheese.</li>
+          <li>4 hamburger buns.</li>
+          <li>1 cup shredded lettuce.</li>
+          <li>1 large tomato, sliced.</li>
+          <li>1 small onion, sliced.</li>
+          <li>Pickles (optional).</li>
+          <li>Salt and pepper to taste.</li>
+          <li>Condiments of your choice (ketchup, mustard, mayonnaise).</li>
+        </ul>
+      </div>
+
+      <div class="steps">
+        <h3>INSTRUCTIONS</h3>
+        <ol>
+          <li>Preheat your grill or skillet to medium-high heat.</li>
+          <li>
+            Divide the ground beef into 4 equal portions and shape them into
+            patties. Season both sides with salt and pepper.
+          </li>
+          <li>
+            Cook the patties on the grill or skillet for about 3-4 minutes per
+            side, or until they reach your desired level of doneness.
+          </li>
+          <li>
+            During the last minute of cooking, place a slice of cheddar cheese
+            on each patty and cover to melt the cheese.
+          </li>
+          <li>
+            Toast the hamburger buns on the grill or in a toaster until lightly
+            browned.
+          </li>
+          <li>
+            Assemble the cheeseburgers by placing a cooked patty on the bottom
+            half of each bun, then adding lettuce, tomato slices, onion slices,
+            pickles (if using), and your preferred condiments. Top with the
+            other half of the bun.
+          </li>
+          <li>Serve immediately and enjoy your classic cheeseburger!</li>
+        </ol>
+      </div>
+    </div>
+  </body>
 </html>

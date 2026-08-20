@@ -4,63 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spaghetti Bolognese Recipe</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: #fcf4d4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #f7567c;
+        color: #fcfcfc;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 15px;
+        width: 550px;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+
+      img {
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
+        width: 500px;
+        height: 300px;
+      }
+
+      h2,
+      h3 {
+        margin-bottom: 6px;
+      }
+      .description,
+      .ingredients,
+      .steps {
+        padding: 10px;
+        margin: 10px;
+      }
+      ul {
+        padding: 10px;
+        list-style: circle;
+      }
+    </style>
   </head>
   <body>
-    <a href="../index.html">Back to Home Page</a>
-    <h1>Spaghetti Bolognese Recipe</h1>
-    <img
-      src="../recipes/images/Spaghetti.png"
-      alt="Delicious Spaghetti Bolognese"
-      width="500"
-    />
+    <div class="container">
+      <img
+        src="../recipes/images/Spaghetti.png"
+        alt="Delicious Spaghetti Bolognese"
+        width="500"
+      />
+      <a href="../index.html">Back to Home Page</a>
+      <h1>Spaghetti Bolognese Recipe</h1>
 
-    <h2>DESCRIPTION</h2>
-    <p>
-      Spaghetti Bolognese is a classic Italian-inspired pasta dish featuring
-      spaghetti topped with a rich, savory meat sauce made with ground beef,
-      tomatoes, onions, and herbs. It is hearty, delicious, and perfect for
-      family meals.
-    </p>
+      <div class="description">
+        <h2>DESCRIPTION</h2>
+        <p>
+          Spaghetti Bolognese is a classic Italian-inspired pasta dish featuring
+          spaghetti topped with a rich, savory meat sauce made with ground beef,
+          tomatoes, onions, and herbs. It is hearty, delicious, and perfect for
+          family meals.
+        </p>
+      </div>
+      <div class="ingredients">
+        <h3>INGREDIENTS</h3>
+        <ul>
+          <li>400 g (14 oz) spaghetti pasta.</li>
+          <li>2 tablespoons olive oil.</li>
+          <li>1 onion, finely chopped.</li>
+          <li>2 cloves garlic, minced.</li>
+          <li>500 g (1 lb) ground beef.</li>
+          <li>1 can (400 g/14 oz) crushed tomatoes.</li>
+          <li>1 teaspoon dried oregano.</li>
+          <li>1 teaspoon dried basil.</li>
+          <li>Salt and black pepper to taste.</li>
+          <li>Fresh parsley, chopped (optional).</li>
+        </ul>
+      </div>
 
-    <h3>INGREDIENTS</h3>
-    <ul>
-      <li>400 g (14 oz) spaghetti pasta.</li>
-      <li>2 tablespoons olive oil.</li>
-      <li>1 onion, finely chopped.</li>
-      <li>2 cloves garlic, minced.</li>
-      <li>500 g (1 lb) ground beef.</li>
-      <li>1 can (400 g/14 oz) crushed tomatoes.</li>
-      <li>1 teaspoon dried oregano.</li>
-      <li>1 teaspoon dried basil.</li>
-      <li>Salt and black pepper to taste.</li>
-      <li>Fresh parsley, chopped (optional).</li>
-    </ul>
-
-    <h3>INSTRUCTIONS</h3>
-    <ol>
-      <li>
-        In a large pot, bring water to a boil and cook the spaghetti according
-        to package instructions until al dente. Drain and set aside.
-      </li>
-      <li>
-        In a large skillet, heat the olive oil over medium heat. Add the onion
-        and cook until softened, about 5 minutes.
-      </li>
-      <li>Add the garlic and cook for another minute.</li>
-      <li>
-        Add the ground beef and cook until browned, breaking it apart with a
-        spoon.
-      </li>
-      <li>Drain any excess fat from the skillet.</li>
-      <li>
-        Add the crushed tomatoes, oregano, basil, salt, and black pepper. Stir
-        to combine.
-      </li>
-      <li>Simmer the sauce for 15-20 minutes until it thickens slightly.</li>
-      <li>
-        Toss the cooked spaghetti with the meat sauce and garnish with fresh
-        parsley if desired.
-      </li>
-    </ol>
+      <div class="steps">
+        <h3>INSTRUCTIONS</h3>
+        <ol>
+          <li>
+            In a large pot, bring water to a boil and cook the spaghetti
+            according to package instructions until al dente. Drain and set
+            aside.
+          </li>
+          <li>
+            In a large skillet, heat the olive oil over medium heat. Add the
+            onion and cook until softened, about 5 minutes.
+          </li>
+          <li>Add the garlic and cook for another minute.</li>
+          <li>
+            Add the ground beef and cook until browned, breaking it apart with a
+            spoon.
+          </li>
+          <li>Drain any excess fat from the skillet.</li>
+          <li>
+            Add the crushed tomatoes, oregano, basil, salt, and black pepper.
+            Stir to combine.
+          </li>
+          <li>
+            Simmer the sauce for 15-20 minutes until it thickens slightly.
+          </li>
+          <li>
+            Toss the cooked spaghetti with the meat sauce and garnish with fresh
+            parsley if desired.
+          </li>
+        </ol>
+      </div>
+    </div>
   </body>
 </html>
