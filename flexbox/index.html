@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+     <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        .container div{
+            background-color: aqua;
+            border: 3px solid pink;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* .container .two{
+            flex: 2
+        } */
+    </style> 
+</head>
+<body>
+    <!-- when you use flex: 1, you are telling your element to have equal space/size. Look at the .two in live server, it expands more than the others because flex is set to 2. -->
+    <div class="container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+</html>

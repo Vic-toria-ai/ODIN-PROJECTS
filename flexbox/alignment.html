@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        .container{
+            background-color: plum;
+            border: 3px solid indigo;
+            padding: 15px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            
+        }
+
+        .item{
+            background-color: skyblue;
+            border: 4px solid darkslategray;
+            height: 60px;
+            width: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- In a Flexbox row, flex-basis does the same thing as width. In a Flexbox column, flex-basis does the same thing as height. -->
+    <!-- justify-content aligns items across the main axis (horizontally), while align-items is on the cross axis(vertically). -->
+     <!-- However, when you change the flex-direction, their role is reversed. Which means that their behavior changes when you change the flex-direction of a flex-container. For example, when you change flex-direction to column, justify-content aligns vertically and align-items aligns horizontally.  -->
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
