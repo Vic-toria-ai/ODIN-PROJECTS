@@ -18,7 +18,7 @@ I'm working through The Odin Project's Full Stack JavaScript path, building real
 ## Progress
 
 - [x] HTML.
-- [] CSS Foundations.
+- [x] CSS Foundations.
 - [] JavaScript Basics.
 - [] Intermediate JavaScript / OOP.
 - [] React Fundamentals.
