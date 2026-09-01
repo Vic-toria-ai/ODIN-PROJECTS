@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data types</title>
+  </head>
+  <body>
+    <p>Strings are used for holding data that appears in text form.</p>
+    <p>
+      Strings can be created as primitives, from string literals, or as objects,
+      using the String() constructor: <br />
+      const string1 = "A string primitive"; <br />
+      const string2 = 'Also a string primitive'; <br />
+      const string3 = `Yet another string primitive`; <br />
+    </p>
+    <p>
+      String literals can be specified using single or double quotes. Template
+      literals on the other hand uses backticks.
+    </p>
+    <p>const stringObject = new String("2+2") this creates a new object</p>
+    <h2>CHECK THE CONSOLE</h2>
+    <script>
+      let a = "a"
+      let b = "b"
+
+      if(a > b){
+          console.log(`${a} is greater than ${b}`);
+
+      } else if(a < b ){
+          console.log(`${a} is less than ${b}`);
+      }else{
+          console.log(`${a} and ${b} are equal`);
+      }
+      // chartAt() method returns the character at a specified index (position) in a string:
+      let name = "Victor"
+      let char = name.charAt(0)
+      console.log(char);
+
+      // The charCodeAt() method returns the unicode of the character at a specified index in a string:
+      let text = "Vivian"
+      let code = text.charCodeAt(0)
+      console.log(code);
+
+      // CONDITIONAL STATEMENTS
+
+      // Conditional Statements allow us to perform different actions for different conditions. It runs different code depending on true or false conditions.
+      // to write conditonals you use: if, else, else if. or switch. Each are used for different conditions.
+      // In classical programming, the logical OR is meant to manipulate boolean values only. If any of its arguments are true, it returns true, otherwise it returns false.
+
+      let age = 24
+      let driverLincense = true
+
+      if(age >= 24 && driverLincense === true){
+        alert('you are eligible to drive')
+      }else{
+        alert('you are not eligible to drive')
+      }
+
+      let price = 2500 * 2
+
+      switch(price){
+        case 1500:
+          alert("That is a huge loss")
+          break;
+          case 4000:
+            alert("Still a loss for the seller")
+            break;
+            case 5000:
+              alert("This is the price for the item")
+              break;
+              default:
+                alert("I do not recognise this price.")
+      }
+    </script>
+  </body>
+</html>
