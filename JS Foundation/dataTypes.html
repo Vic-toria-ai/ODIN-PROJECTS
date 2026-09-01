@@ -21,25 +21,24 @@
     <p>const stringObject = new String("2+2") this creates a new object</p>
     <h2>CHECK THE CONSOLE</h2>
     <script>
-      let a = "a"
-      let b = "b"
+      let a = "a";
+      let b = "b";
 
-      if(a > b){
-          console.log(`${a} is greater than ${b}`);
-
-      } else if(a < b ){
-          console.log(`${a} is less than ${b}`);
-      }else{
-          console.log(`${a} and ${b} are equal`);
+      if (a > b) {
+        console.log(`${a} is greater than ${b}`);
+      } else if (a < b) {
+        console.log(`${a} is less than ${b}`);
+      } else {
+        console.log(`${a} and ${b} are equal`);
       }
       // chartAt() method returns the character at a specified index (position) in a string:
-      let name = "Victor"
-      let char = name.charAt(0)
+      let name = "Victor";
+      let char = name.charAt(0);
       console.log(char);
 
       // The charCodeAt() method returns the unicode of the character at a specified index in a string:
-      let text = "Vivian"
-      let code = text.charCodeAt(0)
+      let text = "Vivian";
+      let code = text.charCodeAt(0);
       console.log(code);
 
       // CONDITIONAL STATEMENTS
@@ -48,30 +47,75 @@
       // to write conditonals you use: if, else, else if. or switch. Each are used for different conditions.
       // In classical programming, the logical OR is meant to manipulate boolean values only. If any of its arguments are true, it returns true, otherwise it returns false.
 
-      let age = 24
-      let driverLincense = true
+      let age = 24;
+      let driverLincense = true;
 
-      if(age >= 24 && driverLincense === true){
-        alert('you are eligible to drive')
-      }else{
-        alert('you are not eligible to drive')
+      if (age >= 24 && driverLincense === true) {
+        alert("you are eligible to drive");
+      } else {
+        alert("you are not eligible to drive");
       }
 
-      let price = 2500 * 2
+      let price = 2500 * 2;
 
-      switch(price){
+      switch (price) {
         case 1500:
-          alert("That is a huge loss")
+          alert("That is a huge loss");
           break;
-          case 4000:
-            alert("Still a loss for the seller")
-            break;
-            case 5000:
-              alert("This is the price for the item")
-              break;
-              default:
-                alert("I do not recognise this price.")
+        case 4000:
+          alert("Still a loss for the seller");
+          break;
+        case 5000:
+          alert("This is the price for the item");
+          break;
+        default:
+          alert("I do not recognise this price.");
       }
+
+      // EXERCISES
+
+      const x = 1;
+      const y = 1;
+
+      let result = x + y;
+
+      console.log(result);
+
+      // number 2
+
+      let num = 6;
+
+      if (num >= 10) {
+        alert("true");
+      } else {
+        alert("false");
+      }
+      console.log(num);
+
+      // num 3
+      // do the math equation of the following
+      //     const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
+      // const b = "one plus eight"
+      // const c = "22 times three"
+      // const d = "the *remainder* of 5/4"
+      // const e = "the variable 'b' minus 17"
+      // const f = "the sum of the previous five variables"
+      const c = 1 + 8
+      const d = 22 * 3
+      const e = 5 % 4
+      const f = c - 17
+      const g = c + d + e + f
+
+      console.log(c, d, e, f, g);
+      // num 4
+
+      let birthYear = 2006
+      let firstName = "Vivan"
+      let lastName = "Adekunle"
+      let thisYear = 2012
+
+      const greeting = "Hello! My name is " + firstName + " " + lastName + " " + "I am " + (thisYear - birthYear) + " years old." 
+      console.log(greeting);
     </script>
   </body>
 </html>
