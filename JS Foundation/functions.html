@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <p>
+      Functions are the main "building blocks" of a programme. They allow code
+      to be called many time`s without repetition.
+    </p>
+
+    <p>
+      To create a function, you need a function declaration, and it looks
+      something like this:
+      <strong
+        ><br />
+        function functionName (parameters){<br />
+        function body <br />}</strong
+      >
+      <br />
+    </p>
+    <p>
+      <strong>N.B A LIST OF PARAMETERS ARE SEPARATED BY COMMAS.</strong>
+    </p>
+
+    <p>
+      You usually call a function by using the function name followed by
+      parentheses. It is called outside the function definition.
+    </p>
+
+    <p>
+      Parameters are used to pass information into a function when it is called.
+    </p>
+
+    <h3>CHECK THE CONSOLE</h3>
+    <script>
+      // function student() {
+      //   console.log("His is a junior year student");
+      // }
+      // student();
+
+      // function person(name, age) {
+      //   console.log(`My name is ${name} and I just turned ${age}.`);
+      // }
+      // person("Success", 30);
+
+      //   Local variables are declared within a function and can only be accessed from within that function. Global variables are declared outside a function and can be accessed from anywhere in the program.
+
+      // function cars() {
+      //   let myCar = "AMG65"; // this is a local variable and can only be accessed within the function. If you try to access it outside the function, it will return an error.
+      //   console.log(myCar);
+      //   alert(`I am currently driving ${myCar}`);
+      // }
+      // cars();
+      //   OUTER OR GLOBAL VARIABLES
+
+      // let userName = "Tobi"; // this is a global variable and can be accessed from anywhere in the program. It can be accessed from within a function or outside a function.
+
+      // function staff() {
+      //   userName = "Pricilla"; // this username was modified inside the function.
+      //   let message = `Hello, my name is ${userName}, it is a pleasure working with you all.`;
+      //   console.log(message);
+      //   alert(message);
+      // }
+      // alert(userName); // this will alert "Tobi".
+      // staff();
+      // alert(userName); // this will alert "Pricilla".
+
+      //   EXAMPLES OF PARAMETERS AND ARGUMENTS
+      // When a value is passed as a function parameter, it’s also called an argument.
+      // A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term).
+      // An argument is the value that is passed to the function when it is called (it’s a call time term).
+      // We declare functions listing their parameters, then call them passing arguments.
+      // function presents(gift1, gift2, gift3) {
+      //   let message = `For my birthday, I received ${gift1}, ${gift2} and even ${gift3}!. They made me soooo happy, I was filled with so much joy. I cried like a baby.`;
+      //   console.log(message);
+      // }
+      // presents("Gucci slippers", "Chanel perfume", "a trip to zanzibar");
+
+      // //   RETURNING A VALUE
+
+      // function add(x, y) {
+      //   return x + y;
+      // }
+      // let result = add(100, 500);
+      // console.log(result);
+
+      //  FUNCTION EXPRESSIONS
+      // It allows you create a new function in the middle of an expression.
+      // instead of declaring a function with the function keyword, you can assign a function to a variable. This is called a function expression.
+      // With function declarations, you will have something like this:
+      // function sayHi() {
+      //   console.log("hello");
+      // }
+      // // With function expressions, you will have something like this:
+      // let sayHello = function () {
+      //   alert("hello");
+      // };
+
+      // ARROW FUNCTIONS
+      // Arrow functions are a more concise syntax for writing function expressions. They are often used for short, simple functions.
+      // Arrow functions are always anonymous, and they can be used as function expressions.
+
+      // examples of arrow functions.
+      // let numb = (x, y) => x + y;
+      // console.log(numb(25, 25));
+
+      // let names = (name1, name2, name3) =>
+      //   alert(`${name1}, ${name2}, ${name3}`);
+      // names("tunde", "ben", "ade");
+
+      // // when it has just one parameters, there's no need for parenthesis.
+      // let root = (n) => n ** 2;
+      // console.log(root(6));
+
+      // // If there are no arguments, parentheses are empty, but they must be present
+      // let greeting = () => console.log("Hello");
+      // greeting();
+
+      // multi-line arrow functions
+
+      // let guests = (guest1, guest2) => {
+      //   let result = `We are expecting ${guest1} & ${guest2} at the party this evening.`;
+      //   return result;
+      // };
+      // console.log(guests("Tunji", "Benita"));
+
+      function add7(num) {
+        return num + 7;
+      }
+      console.log(add7(10));
+
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+      console.log(multiply(3, 2));
+
+      function capitalise(str) {
+        let result = str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+        return result;
+      }
+      console.log(capitalise("bread"));
+      console.log(capitalise("BREAD"));
+      console.log(capitalise("BreAD"));
+
+      function lastLetter(str) {
+        return str[str.length - 1];
+      }
+      console.log(lastLetter("price"));
+    </script>
+  </body>
+</html>
